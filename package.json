@@ -1,0 +1,27 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "develop": "concurrently \"npm start\"",
+      "install": "cd ../client && npm i",
+      "build": "cd client && npm run build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Omar4589/YardGems.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Omar4589/YardGems/issues"
+    },
+    "homepage": "https://github.com/Omar4589/YardGems#readme",
+    "dependencies": {
+      "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+      "concurrently": "^8.2.0",
+      "dotenv": "^16.3.1"
+    }
+  }
