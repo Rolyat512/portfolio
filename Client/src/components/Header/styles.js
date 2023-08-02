@@ -16,4 +16,9 @@ export const styles = {
           padding: "5px 50px 15px 50px",
         },
       },
+      links: {
+        fontSize: '15px',
+        justifyContent: 'space-between',
+        display: 'flex',
+      },
 };

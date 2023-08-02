@@ -1,11 +1,12 @@
 import React from 'react'
 import { styles } from "./styles";
+import { Box } from '@mui/material'
 
 const Portfolio = () => {
   return (
-    <div>
-      
-    </div>
+    <Box sx={{...styles.portfolio}}>
+     
+    </Box>
   )
 }
 

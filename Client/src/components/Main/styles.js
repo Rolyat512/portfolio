@@ -1,6 +1,13 @@
 import { withTheme } from "@emotion/react";
 
 export const styles = {
+    mainContainer: {
+        height: '100vh',
+        border: "1px solid white",
+        color: 'white',
+        backgroundColor: '#122345',
+
+    },
     bubbles: {
         backgroundColor: '#122345',
         width: '20%',
@@ -12,15 +19,11 @@ export const styles = {
         border: "1px solid white",
         padding: '0px'
     },
-    mainContainer: {
-        height: '100vh',
-        border: "1px solid white",
-        color: 'white',
-        backgroundColor: '#122345',
-
-    },
     aboutSection: {
-        border: "1px solid white"
+        borderBottom: "1px solid white",
+        borderLeft: "1px solid white",
+        borderRight: "1px solid white",
+        height: '100vh',
     },
     expSection: {
         border: "1px solid white"
@@ -29,7 +32,9 @@ export const styles = {
         border: "1px solid white"
     },
     contactSection: {
-        border: "1px solid white"
+        borderTop: "1px solid white",
+        borderLeft: "1px solid white",
+        borderRight: "1px solid white",
     },
     MuiGrid: {
         'spacing-xs-3': {

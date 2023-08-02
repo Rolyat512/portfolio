@@ -2,6 +2,11 @@ import React from "react";
 import { styles } from "./styles";
 import { Box, Grid } from "@mui/material";
 import './bubbles.css'
+import About from "../About/About";
+import Experience from "../Experience/Experience";
+import Contact from "../Contact/Contact";
+import Portfolio from "../Portfolio/Portfolio";
+
 
 // This container will be the main container and will hold all of the code excluding header / footer / and bottom nav
 
@@ -37,16 +42,16 @@ const Main = () => {
             </Grid>
 			<Grid item container direction="column" xs spacing={0} sx={{...styles.middleSection}}>
 				<Grid item xs sx={{...styles.aboutSection}}>
-					<div> About</div>
+					<div> About <About /></div>
 				</Grid>
 				<Grid item xs sx={{...styles.expSection}}>
-					<div>Experience</div>
+					<div>Experience <Experience /> </div>
 				</Grid>
 				<Grid item xs sx={{...styles.portSection}}>
-					<div>Portfolio</div>
+					<div>Portfolio <Portfolio /> </div>
 				</Grid>
 				<Grid item xs sx={{...styles.contactSection}}>
-					<div>Contact Me </div>
+					<div>Contact Me <Contact />  </div>
 				</Grid>
 			</Grid>
 			<Grid item direction="column" xs={2} sx={{ ...styles.bubbles }}>
