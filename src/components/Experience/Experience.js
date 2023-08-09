@@ -1,7 +1,7 @@
 import React from 'react'
-// import JavascriptIcon from '@mui/icons-material/Javascript';
-// import CssIcon from '@mui/icons-material/Css';
-// import HtmlIcon from '@mui/icons-material/Html';
+import { styles } from "./styles";
+import {} from '@mui/material'
+
 
 // npm install react-icons --save
 import { FaReact } from 'react-icons/fa';
