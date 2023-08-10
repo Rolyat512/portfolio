@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 220%;
+    padding: .5rem;
+    color: white;
+}
+
+nav a {
+    margin: .85rem;
+    font-weight: 900;
+    border-bottom: 4px solid #122345;
+    border-radius: 20%;
+}

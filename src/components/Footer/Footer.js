@@ -1,13 +1,24 @@
-import React from 'react'
+import React from "react";
 import { styles } from "./styles";
-import {} from '@mui/material'
+import "./footer.css";
+import {
+	Typography,
+	Box,
+	Link,
+	BottomNavigationAction,
+	BottomNavigation,
+} from "@mui/material";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return (
+		<BottomNavigation>
+            <BottomNavigationAction label="Recents" icon={<BsLinkedin />} />
+            <BottomNavigationAction label="Recents" icon={<BsLinkedin />} />
+            <BottomNavigationAction label="Recents" icon={<BsLinkedin />} />
+		</BottomNavigation>
+	);
+};
 
-export default Footer
+export default Footer;

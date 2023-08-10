@@ -4,10 +4,7 @@ import './background.css';
 const Background = () => {
   return (
     <div className="bubbles">
-      <span> Test </span>
-      <span> Test </span>
-      <span> Test </span>
-      <span> Test </span>
+        
     </div>
   )
 }
