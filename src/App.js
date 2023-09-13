@@ -8,10 +8,11 @@ import Footer from './components/Footer/Footer';
 
 const  App = () => 
     <div className="App">
+      <Background /> 
       <Header></Header>
       <About />
-      <Experience />
-      {/* <Footer></Footer> */}
+      {/* <Experience /> */}
+      <Footer></Footer>
 
     </div>
 
