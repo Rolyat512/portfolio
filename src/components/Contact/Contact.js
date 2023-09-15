@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 // import { SMTPClient } from 'emailjs';
-import env from "react-dotenv";
+// import env from "react-dotenv";
 
 const Contact = () => {
 	// const client = new SMTPClient({

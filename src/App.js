@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Bubbles, Header, About, Experience, Portfolio, Resume, Socials, Contact } from './componets';
+import { Bubbles, Header, About, Experience, Portfolio, Resume, Socials, Contact } from './components';
 
 const App = () => {
 
