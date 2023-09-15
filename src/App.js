@@ -1,20 +1,26 @@
-import './App.css';
-import {Background, About, Experience } from './components';
-import Portfolio from './components/Portfolio/Portfolio';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { useState } from 'react';
+import { Bubbles, Header, About, Experience, Portfolio, Resume, Socials, Contact } from './componets';
 
+const App = () => {
 
+  const [page, setPage] = useState('about');
+ 
+  return <>
+    <Header setPage={setPage} />  
 
-const  App = () => 
-    <div className="App">
-      <Background /> 
-      <Header></Header>
-      <About />
-      {/* <Experience /> */}
-      <Footer></Footer>
+    <Bubbles >
 
-    </div>
+        {page == 'about' ? <About />: page == 'experience' ? <Experience /> : <Portfolio />}
+      
+        {/* <Contact /> */}
 
+      {/* <Resume /> */}
+      
+    </Bubbles>
+    <Socials />
+
+    
+  </>
+}
 
 export default App;
