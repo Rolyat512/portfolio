@@ -1,0 +1,43 @@
+.formStyle {
+   display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    width: 90%;
+    font-size: 16px;
+    align-items: center;
+   margin: 10px;
+}
+
+.inputStyle {
+    width: 90%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rbg(220, 220, 220);
+}
+
+.textareaStyle {
+    max-width: 90%;
+    min-width: 90%;
+    width: 90%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb( 0, 206, 158, 1);
+}
+
+.sendButton {
+    width: 50%;
+    margin-top: 10px;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rbg(220, 220, 220);
+}
+
+
+

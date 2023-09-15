@@ -1,0 +1,20 @@
+.apps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.apps > div {
+    width: 47%;
+    margin: 20px auto;
+}
+
+.apps > div:first-child {
+    width: 100%;
+    height: 40vh;
+}
+
+.apps div[role="img"] {
+    height: 50%;
+    width: 100%;
+}

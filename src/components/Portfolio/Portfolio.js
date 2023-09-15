@@ -1,39 +1,47 @@
-// import React, { useState } from 'react'
-// import { styles } from "./styles";
-// import { Box, Card, CardActionArea, CardMedia, Typography, CardContent, CardHeader } from '@mui/material'
+import './portfolio.css';
+import apps from './apps.js';
+import { Box, Card, CardActionArea, CardMedia, Typography, CardContent, CardHeader } from '@mui/material'
+import Carousel from 'react-material-ui-carousel'
 
-// const Portfolio = () => {
+const Portfolio = () => {
 
-//   return (
-//     <Box sx={{...styles.portfolio}}>
-//         <Card component="div" sx={{ maxWidth: 500 }}>
-//                   {/* <CardActionArea onClick={() => handleOpen()}> */}
-//                   <CardActionArea>
-//                     <CardHeader
-//                       title={'Project2'}
-//                       subheader={``}
-//                     />
-//                     <CardMedia
-//                       sx={{ height: 140, paddingTop: "56.2%" }}
-//                       image={test}
-//                     />
-//                     <CardContent component="div">
-//                       <Typography component="span" gutterBottom variant="h5">
-//                         Testing
-//                       </Typography>
-//                       <Typography
-//                         component="div"
-//                         variant="body2"
-//                         color="text.secondary"
-//                       >
-//                         Testing
-//                       </Typography>
-//                     </CardContent>
-//                   </CardActionArea>
-//                 </Card>
-      
-//     </Box>
-//   )
-// }
+  return (
+    <div className='apps'>
+      <Carousel
+  
+      >
+      {
+        apps.map(({key,name,desc,pic,website,github}) => 
+          <Card key={key} component="div">
+            {/* <CardActionArea onClick={() => handleOpen()}> */}
+            <CardActionArea>
+              <CardHeader
+                title={name}
+                subheader={desc}
+              />
+              <CardMedia
+                sx={{ height: 140, paddingTop: "56.2%" }}
+                image={pic}
+              />
+              <CardContent component="div">
+                <Typography component="span" gutterBottom variant="h5">
+                  Testing
+                </Typography>
+                <Typography
+                  component="div"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  Testing
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        )
+      }
+      </Carousel>
+    </div>
+  )
+}
 
-// export default Portfolio
+export default Portfolio

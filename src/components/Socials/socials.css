@@ -1,0 +1,18 @@
+.socials {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    z-index: 2;
+}
+
+.socials a {
+    height: 60%;
+}
+.socials img {
+    height: 100%;
+}
