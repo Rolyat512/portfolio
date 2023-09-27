@@ -1,5 +1,7 @@
 embed {
     height: 100vh;
-    width: 100%;
-
+    width: 90%;
+    display: block;
+    margin: 5vh auto;
+    max-width: 1100px;
 }

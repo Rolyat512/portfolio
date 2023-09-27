@@ -1,6 +1,7 @@
 import './resume.css';
+import doc from './Resume.pdf';
 
 const Resume = () => 
-<embed src='Resume.pdf'></embed> 
+<embed src={doc} />
 
 export default Resume;
