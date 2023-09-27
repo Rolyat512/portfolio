@@ -24,7 +24,7 @@ const apps = [
     {
         "key":3,
         "name":"Employee Tracker",
-        "desc":"description goes here",
+        "desc":"Tracks information about employee's",
         "pic":`${employeePic}`,
         "website":"https://rolyat512.github.io/Employee-Tracker/",
         "github":"https://github.com/Rolyat512/Employee-Tracker"
