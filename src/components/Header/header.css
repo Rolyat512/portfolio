@@ -1,21 +1,48 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    background: black;
-    color: white;
-    padding: 1rem;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	background: black;
+	color: white;
+	padding: 1rem;
+	align-items: center;
+	z-index: 3;
+	position: relative;
+	/* font-family: "Alegreya", serif; */
+	font-family: "IM Fell Great Primer", serif; 
+	font-family: "Lato", sans-serif; 
 }
 
 nav h1 {
-    font-size: 220%;
-    padding: .5rem;
-    color: white;
-}
+	font-size: 240%;
+	padding: 0.5rem;
+	color: white;
+	font-family: "Alegreya", serif;
+} 
+
+.header {
+    background-image: 
+      linear-gradient(to right, silver, white, lightblue); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 35s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+      to {
+          background-position: 40vh;
+      }
+  }
 
 nav a {
-    margin: .85rem;
-    font-weight: 900;
-    border-bottom: 4px solid #122345;
-    border-radius: 20%;
+	margin: 0.85rem;
+	/* border-bottom: 1px solid #ADD8E6;
+	border-radius: 20%; */
+	color: white;
+	font-size: 1.5vw;
+    background-image: 
+    linear-gradient(to right, lightblue,white, lightblue); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 35s linear infinite;
+    
 }
