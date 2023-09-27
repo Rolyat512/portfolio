@@ -1,11 +1,17 @@
 .formStyle {
-   display: flex;
-   align-items: flex-start;
+    display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 60%;
     font-size: 16px;
     align-items: center;
-   margin: 10px;
+    margin: 10vh auto 20vh;
+    background: black;
+    color: white;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 12px;
+    max-width: 1000px;
+    font-family: "Roboto", sans-serif;
 }
 
 .inputStyle {
@@ -37,6 +43,7 @@
     outline: none;
     border-radius: 5px;
     border: 1px solid rbg(220, 220, 220);
+    font-family: "Roboto", sans-serif;
 }
 
 
