@@ -1,18 +1,23 @@
 import './portfolio.css';
 import apps from './apps.js';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Box, Card, CardActionArea, CardMedia, Typography, CardContent, CardHeader } from '@mui/material'
-import Carousel from 'react-material-ui-carousel'
+import Carousel from 'react-material-ui-carousel';
+// import icon3 from './images/github.jpg';
 
-const Portfolio = () => {
+const Portfolio = ({page}) => {
 
-  const [showApp, setShowApp] = useState('');
   let ajustImgHeigh = (el) => {
-    let height = `${document.querySelector(el).getClientRects()[0].width * .5}px`;
+    console.log(document.querySelector(el));
+    if(document.querySelector(el)===null) return;
+
+    // {console.log(page)}
+    let height = `${document.querySelector(el).getClientRects()[0].width * .8}px`;
     document.querySelectorAll(el).forEach(img => img.style.height = height);
   }
 
   let scrollApp = i => {
+
     let el = document.querySelector('.apps');
     let height = el.offsetHeight+5;
     el.scrollTo({ top: height * i, behavior: 'smooth' });
@@ -28,6 +33,7 @@ const Portfolio = () => {
     ajustImgHeigh('.appNav button');
 
     window.addEventListener('resize', () => {
+      {console.log(page)}
       ajustImgHeigh('.appNav button');
       ajustImgHeigh('.apps');
     });
@@ -58,7 +64,10 @@ const Portfolio = () => {
               <h1>{name}</h1>
               <p>{desc}</p>
               <a href={website} target="_blank">Website</a>
-              <a href={github} target="_blank">Github</a>
+              <a href={github} target="_blank">
+              {/* <img src={icon3} /> */}
+              github
+              </a>
             </div>
           )
         }

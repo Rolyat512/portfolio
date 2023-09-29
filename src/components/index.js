@@ -7,6 +7,7 @@ import Resume from './Resume';
 import Socials from './Socials';
 import Contact from './Contact';
 import Divider from './Divider';
+import Title from './Title'
 
 
-export {Bubbles, Header, About, Experience, Portfolio, Resume, Socials, Contact, Divider}; 
+export {Bubbles, Header, About, Experience, Portfolio, Resume, Socials, Contact, Divider, Title}; 

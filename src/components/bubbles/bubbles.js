@@ -1,98 +1,99 @@
-import './bubbles.css';
-import pics from './images';
-import { useEffect, useState } from 'react';
+import "./bubbles.css";
+import pics from "./images";
+import { useEffect, useState } from "react";
 
-const Bubbles = props => {
-    
-    let i = 0;
-    let i2 = 0;
+const Bubbles = (props) => {
+	let i = 0;
+	let i2 = 0;
 
-    const showSkill = () => {
+	const showSkill = () => {
+		let bubbles = [2, 7, 0, 5, 6, 1, 3, 4, 9, 8];
+		let elems = document.querySelectorAll(".bubble1");
 
-        let bubbles = [2,7,0,5,6,1,3,4,9,8];
-        let elems = document.querySelectorAll('.bubble1');
-        
-        if(i>bubbles.length-1) i = 0;
-        
-        let el = elems[bubbles[i]];
+		if (i > bubbles.length - 1) i = 0;
 
-        el.style.animationPlayState = 'paused';
-        el.style.border = 'none';
-        el.firstChild.style.animation = 'bubble2 1s'
-        el.style.boxShadow = 'unset';
-        let pic = Object.keys(pics)
+		let el = elems[bubbles[i]];
 
-        setTimeout(() => {
+		el.style.animationPlayState = "paused";
+		el.style.border = "none";
+		el.firstChild.style.animation = "bubble2 1s";
+		el.style.boxShadow = "unset";
+		let pic = Object.keys(pics);
 
-            if(i2>pic.length-1) i2 = 0;
-            let index = pic[i2];
+		setTimeout(() => {
+			if (i2 > pic.length - 1) i2 = 0;
+			let index = pic[i2];
 
-            el.firstChild.style.animation = 'unset';
-            el.innerHTML = `<img src=${pics[index]} />`;
-            el.firstChild.style.animation = 'bubble3 10s';
-            setTimeout(() => { el.style.animationPlayState = 'running' }, 500);
-            i2++;
-        }, 600);
+			el.firstChild.style.animation = "unset";
+			el.innerHTML = `<img src=${pics[index]} />`;
+			el.firstChild.style.animation = "bubble3 10s";
+			setTimeout(() => {
+				el.style.animationPlayState = "running";
+			}, 500);
+			i2++;
+		}, 600);
 
-        setTimeout(() => {
-            el.style = '';
-            el.innerHTML = '<div className="bubble2">#</div>';
-            el.firstChild.classList.toggle('bubble2');
-        }, 10000);
+		setTimeout(() => {
+			el.style = "";
+			el.innerHTML = '<div className="bubble2">#</div>';
+			el.firstChild.classList.toggle("bubble2");
+		}, 10000);
 
-        i++;
-    }
+		i++;
+	};
 
-    useEffect(() => { window.onload = () => setInterval( showSkill, 2000 ) });
+	useEffect(() => {
+		window.onload = () => {
+            if(document.querySelector('.bubble1'))
+			setInterval(showSkill, 2000);
+		};
+	});
 
-    return (
-        <div className="background">
+	return (
+		<div className="background">
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
+			<div className="bubble1">
+				<div className="bubble2">#</div>
+			</div>
 
-            <div className="bubble1" >
-                <div className="bubble2">#</div>
-            </div>
-
-            {props.children}
-
-        </div>
-    )
-}
-
+			{props.children}
+		</div>
+	);
+};
 
 export default Bubbles;

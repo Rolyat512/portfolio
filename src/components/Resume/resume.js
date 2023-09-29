@@ -1,7 +1,10 @@
-import './resume.css';
-import doc from './Resume.pdf';
+import "./resume.css";
+import doc from "./Resume.pdf";
 
-const Resume = () => 
-<embed src={doc} />
+const Resume = () => (
+	<div className="resume">
+		<embed src={doc} />
+	</div>
+);
 
 export default Resume;

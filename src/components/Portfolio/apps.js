@@ -8,7 +8,7 @@ const apps = [
     {
         "key":1,
         "name":"YardGems",
-        "desc":"Garage sale listing app",
+        "desc":"Discover YardGems, the ultimate online platform for garage and yard sale enthusiasts. Connect, post, find hidden gems, and embark on exciting sale adventures. Created using the MERN stack.",
         "pic":`${yardPic}`,
         "website":"https://yardgems-15b0faee737f.herokuapp.com/",
         "github":"https://github.com/Rolyat512/YardGems"
@@ -16,7 +16,7 @@ const apps = [
     {
         "key":2,
         "name":"MealMappr",
-        "desc":"Meal planner with calendar",
+        "desc":"Meal Mappr is a meal planning website where you can view a calendar and create your very own meal plan from scratch.",
         "pic": `${mealPic}`,
         "website":"https://mealmappr.herokuapp.com",
         "github":"https://github.com/Rolyat512/MealMappr"
@@ -24,7 +24,7 @@ const apps = [
     {
         "key":3,
         "name":"Employee Tracker",
-        "desc":"Tracks information about employee's",
+        "desc":"An app where you can view all of the departments, roles, and employees in a company to help organize data",
         "pic":`${employeePic}`,
         "website":"https://rolyat512.github.io/Employee-Tracker/",
         "github":"https://github.com/Rolyat512/Employee-Tracker"
@@ -32,19 +32,19 @@ const apps = [
     {
         "key":4,
         "name":"Code Quiz ",
-        "desc":"Coding quiz with timer",
+        "desc":"A timed quiz that test your knowledge on JavaScript",
         "pic":`${codePic}`,
         "website":"https://rolyat512.github.io/code-quiz/",
         "github":"https://github.com/Rolyat512/code-quiz"
     },
-    {
-        "key":5,
-        "name":"Kingdom Wars ",
-        "desc":"On going personal project",
-        "pic":`${constructionPic}`,
-        "website":"https://rolyat512.github.io/note-taker/",
-        "github":"https://github.com/Rolyat512/kingdom-wars"
-    }
+    // {
+    //     "key":5,
+    //     "name":"Kingdom Wars ",
+    //     "desc":"On going personal project",
+    //     "pic":`${constructionPic}`,
+    //     "website":"https://rolyat512.github.io/note-taker/",
+    //     "github":"https://github.com/Rolyat512/kingdom-wars"
+    // }
 ]
 
 export default apps;

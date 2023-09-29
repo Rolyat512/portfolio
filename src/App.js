@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Bubbles, Header, About, Portfolio, Resume, Socials, Divider, Contact } from './components';
+import { Bubbles, Header, About, Portfolio, Resume, Socials, Divider, Contact, Title } from './components';
 
 const App = () => {
   const [page, setPage] = useState('about');
@@ -14,7 +14,7 @@ const App = () => {
           <Divider />
           {/* <Title title="Portfolio" /> */}
           <Portfolio />
-          {/* <Title title="Contact" /> */}
+          <Title title="Contact" />
           <Contact />
         </Bubbles> :
         <Resume />
