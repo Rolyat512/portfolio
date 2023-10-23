@@ -1,26 +1,36 @@
-import { useState } from 'react';
-import { Bubbles, Header, About, Portfolio, Resume, Socials, Divider, Contact, Title } from './components';
+import { useState } from "react";
+import {
+	Bubbles,
+	Header,
+	Title,
+	About,
+	Portfolio,
+	Resume,
+	Socials,
+	Divider,
+	Contact,
+} from "./components";
 
 const App = () => {
-  const [page, setPage] = useState('about');
+	const [page, setPage] = useState("about");
 
-  return <>
-    <Header setPage={setPage} />
+	return (
+		<>
+			<Header setPage={setPage} />
 
-    {
-      page == 'about' ?
-        <Bubbles>
-          <About />
-          <Divider />
-          {/* <Title title="Portfolio" /> */}
-          <Portfolio />
-          <Title title="Contact" />
-          <Contact />
-        </Bubbles> :
-        <Resume />
-    }
-    <Socials />
-  </>
-}
-
+			{page == "about" ? 
+				<Bubbles>
+						<About />
+						<Divider />
+						<Portfolio page={page} />
+						<Title title="Contact" />
+						<Contact />
+				</Bubbles>
+			 : 
+				<Resume />
+			}
+			<Socials setPage={setPage}/>
+		</>
+	);
+};
 export default App;

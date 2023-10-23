@@ -14,6 +14,8 @@ const Bubbles = (props) => {
 
 		let el = elems[bubbles[i]];
 
+		if (el==undefined) return;
+
 		el.style.animationPlayState = "paused";
 		el.style.border = "none";
 		el.firstChild.style.animation = "bubble2 1s";
@@ -43,10 +45,7 @@ const Bubbles = (props) => {
 	};
 
 	useEffect(() => {
-		window.onload = () => {
-            if(document.querySelector('.bubble1'))
-			setInterval(showSkill, 2000);
-		};
+		window.onload = () => setInterval(showSkill, 2000);
 	});
 
 	return (
