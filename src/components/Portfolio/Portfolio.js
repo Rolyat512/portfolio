@@ -5,13 +5,16 @@ import images from './images';
 const Portfolio = () => {
 
   let scrollApp = (i) => {
-		let el = document.querySelector(".apps");
-		let height = el.offsetHeight + 5;
-		el.scrollTo({ top: height * i, behavior: "smooth" });
-
-		let el2 = document.querySelector(".infoContainer");
-		let height2 = el2.offsetHeight;
-		el2.scrollTo({ top: height2 * i, behavior: "smooth" });
+    document.getElementById('mainImg').src = apps[i].pic;
+    document.getElementById('appTitle').innerHTML = apps[i].name;
+    document.getElementById('appDesc').innerHTML = apps[i].desc + '<span id="techUsed"></span>';
+    document.getElementById('a1').href = apps[i].website;
+    document.getElementById('a2').href = apps[i].github;
+    
+    let tech = document.getElementById('techUsed');
+    apps[i].tech.map(path => {
+      tech.innerHTML += `<img key=${path} src=${images[path]} />`
+    })
 	};
 
   return (
@@ -28,7 +31,7 @@ const Portfolio = () => {
 				))}
 			</div>
       <div className='appDisplay'>
-        <img src={apps[0].pic}></img>
+        <img id='mainImg' src={apps[0].pic}></img>
 
         <a id="a1" href={apps[0].website} target='_blank'>
           <button>website</button>
@@ -40,7 +43,7 @@ const Portfolio = () => {
         <p id='appDesc'> 
         {apps[0].desc}
         <span id='techUsed'>
-        {apps[0].tech.map(path => <img src={images[path]} />)}
+        {apps[0].tech.map(path => <img key={path} src={images[path]} />)}
         </span>
          </p>
       </div>

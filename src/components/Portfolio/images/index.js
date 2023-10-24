@@ -1,3 +1,4 @@
+import api from './api.png';
 import apolloServerExpress from './apolloServerExpress.png';
 import bcrypt from './bcrypt.png';
 import codeQuiz from './codeQuiz.png';
@@ -15,6 +16,7 @@ import JavaScript from './JavaScript.png';
 import jwt from './jwt.png';
 import mealMappr from './mealMappr.png';
 import mongoose from './mongoose.png';
+import mysql from './mysql.png'
 import muiMateral from './muiMaterial.png';
 import nodeJs from './nodeJs.png';
 import nodeMailer from './nodeMailer.png';
@@ -23,4 +25,5 @@ import reactRouter from './reactRouter.png';
 import tailwindCss from './tailwindCss.png';
 import yardGems from './yardGems.png';
 
-export default { apolloServerExpress, bcrypt, codeQuiz, css, dotenv, employeeTracker, express, fullCalendar, github, googleMaps, graphQL, handlebars, html, JavaScript, jwt, mealMappr, mongoose, muiMateral, nodeJs, nodeMailer, reactJs, reactRouter, tailwindCss, yardGems };
+
+export default { api, apolloServerExpress, bcrypt, codeQuiz, css, dotenv, employeeTracker, express, fullCalendar, github, googleMaps, graphQL, handlebars, html, JavaScript, jwt, mealMappr, mongoose, muiMateral, nodeJs, nodeMailer, reactJs, reactRouter, tailwindCss, yardGems, mysql };

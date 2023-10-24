@@ -15,7 +15,7 @@ const apps = [
         "name":"MealMappr",
         "desc":"Meal Mappr is a meal planning website where you can view a calendar and create your very own meal plan from scratch.",
         "pic": `${images.mealMappr}`,
-        "tech": ['nodejs', 'javascript', 'mysql', 'css', 'html', 'api', 'expressjs', 'bcrypt', 'expressSession', 'nodeMailer', 'handlebars', 'fullCalendar', 'tailwindcss'],
+        "tech": ['nodeJs', 'JavaScript', 'mysql', 'css', 'html', 'api', 'express', 'bcrypt', 'nodeMailer', 'handlebars', 'fullCalendar', 'tailwindCss'],
         "website":"https://mealmappr.herokuapp.com",
         "github":"https://github.com/Rolyat512/MealMappr"
     },
