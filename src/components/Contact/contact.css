@@ -32,7 +32,7 @@
     padding: 7px;
     outline: none;
     border-radius: 5px;
-    border: 1px solid rgb( 0, 206, 158, 1);
+    border: 1px solid rgb(0, 206, 158, 1);
 }
 
 .sendButton {
@@ -46,5 +46,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+@media screen and (max-width:414px) and (min-height:600px) {
+    .title {
+        padding-top: 10vh;
+    }
 
+    .formStyle {
+        margin-top: 18vh;
+        margin-bottom: 25vh;
+    }
 
+}
+
+;

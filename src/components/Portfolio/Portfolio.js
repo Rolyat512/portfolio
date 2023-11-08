@@ -5,6 +5,8 @@ import images from './images';
 const Portfolio = () => {
 
   let scrollApp = (i) => {
+    let div = document.querySelector('.appDisplay');
+    div.style.opacity = 0;
     document.getElementById('mainImg').src = apps[i].pic;
     document.getElementById('appTitle').innerHTML = apps[i].name;
     document.getElementById('appDesc').innerHTML = apps[i].desc + '<span id="techUsed"></span>';
@@ -15,7 +17,14 @@ const Portfolio = () => {
     apps[i].tech.map(path => {
       tech.innerHTML += `<img key=${path} src=${images[path]} />`
     })
-	};
+
+    div.classList.toggle('animateApps');
+    
+    setTimeout(()=>{
+      div.style.opacity = 1;
+      div.classList.toggle('animateApps');
+    },500);
+};
 
   return (
     <div className="portContainer">
@@ -37,7 +46,7 @@ const Portfolio = () => {
           <button>website</button>
         </a>
         <a id="a2" href={apps[0].github} target='_blank'>
-          <button>gitHub</button>
+          <button>gitHub <img src={images.github}/></button>
         </a>
         <h1 id='appTitle'> {apps[0].name} </h1>
         <p id='appDesc'> 

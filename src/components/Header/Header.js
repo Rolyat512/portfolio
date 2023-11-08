@@ -5,7 +5,7 @@ import {Typography} from '@mui/material';
 const Header = props => 
   <nav>
     {/* <Typography variant='h2'> Taylor Aldridge </Typography> */}
-    <h1 id='about' className='header'>Taylor Aldridge</h1>
+    <h1 id='about' className='header'>Taylor Aldridge<br/><span>Full Stack Web Developer</span></h1>
 
     <div>
       <a href="#about" onClick={()=>props.setPage('about')}>About Me </a>
