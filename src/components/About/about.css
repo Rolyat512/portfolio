@@ -1,0 +1,55 @@
+.about {
+	margin: 15vh 12.5% 20vh;
+	width: 75%;
+	padding: 10px;
+	border-radius: 25px 0;
+	border: 2px solid #000;
+	z-index: 6;
+	background: #000000;
+	color: white;
+	max-width: 950px;
+	font-family: "Roboto", sans-serif;
+}
+
+.about img {
+	width: 150px;
+	height: 200px;
+	border-radius: 30%;
+	float: left;
+	margin-right: 20px;
+	box-shadow: 1px 1px 8px;
+}
+
+@media screen and (max-width:414px) and (min-height:600px) {
+
+	.about {
+		margin: 5vh auto 20vh;
+		width: 100%;
+		padding: 5px;
+		border-radius: unset;
+		border: unset;
+		z-index: 6;
+		background: transparent;
+		color: black;
+		text-shadow: 0 0 2px white;
+	}
+
+	.about img {
+		width: 60%;
+		border-radius: 40px;
+		height: unset;
+		float: unset;
+		margin: 0 auto;
+		box-shadow: unset;
+		align-items: center;
+		display: flex;
+	}
+
+	p {
+		font-weight: 600;
+		padding: 10px;
+		text-shadow: 0px 0px 2px white;
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+}

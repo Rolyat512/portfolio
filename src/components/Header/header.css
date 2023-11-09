@@ -1,0 +1,73 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+	font-size: 240%;
+	padding: 0.5rem;
+	color: white;
+	font-family: "Alegreya", serif;
+} 
+
+.header {
+    background-image: 
+      linear-gradient(to right, silver, white, lightblue); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 35s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+      to {
+          background-position: 40vh;
+      }
+  }
+
+nav a {
+	margin: 0.85rem;
+	color: white;
+	font-size: 1.5vw;
+    background-image: 
+    linear-gradient(to right, lightblue,white, lightblue); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 35s linear infinite;
+    
+}
+
+@media screen and (max-width:414px) and (min-height:600px) {
+	.header {
+		font-size: 2.5rem;
+		width: 100%;
+		margin: 0;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header span {
+		font-size: 1.3rem;
+	}
+
+	nav > div {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav > div > a {
+		margin: unset;
+		font-size: 3vw;
+		width: 20%;
+		text-align: center;
+	}
+}
