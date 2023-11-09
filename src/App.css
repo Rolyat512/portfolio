@@ -1,0 +1,42 @@
+.socials {
+    bottom: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+
+.socials a {
+    height: 60%;
+    color: white;
+    font-size: 10px;
+    margin: 0 20px;
+}
+
+.socials img {
+    height: 100%;
+}
+
+#resumeIcon {
+    height: 70%;
+}
+
+@media screen and (max-width:414px) and (min-height:600px) {
+    .socials {
+        bottom: 0;
+        width: 100%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        z-index: 10;
+        position: fixed;
+        text-align: center;
+    }
+}
