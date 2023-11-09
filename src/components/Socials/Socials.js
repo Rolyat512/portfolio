@@ -1,5 +1,5 @@
 import React from "react";
-import "./socials.css";
+// import "./socials.css";
 import icon1 from "./images/linkedIn3.png";
 import icon2 from "./images/linkedIn2.png";
 import icon3 from "./images/github.png";
