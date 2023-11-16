@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.socialContainer a {
+.socialContainer a, .socialContainer button {
     height: 60%;
     color: white;
     font-size: 10px;
