@@ -1,4 +1,4 @@
-.socials {
+.socialContainer {
     bottom: 0;
     width: 100%;
     background: black;
@@ -11,14 +11,14 @@
     text-align: center;
 }
 
-.socials a {
+.socialContainer a {
     height: 60%;
     color: white;
     font-size: 10px;
     margin: 0 20px;
 }
 
-.socials img {
+.socialContainer img {
     height: 100%;
 }
 
@@ -28,7 +28,7 @@
 
 
 @media screen and (max-width:414px) and (min-height:600px) {
-    .socials {
+    .socialContainer {
         bottom: 0;
         width: 100%;
         background: black;

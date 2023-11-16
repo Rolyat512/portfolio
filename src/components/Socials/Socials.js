@@ -7,7 +7,7 @@ import icon4 from "./images/resume.png";
 
 const Socials = (props) => {
 	return (
-		<div className="socials">
+		<div className="socialContainer">
 			<a href="https://www.linkedin.com/in/taylor-aldridge512/" target="blank">
 				<img src={icon1} />
 			</a>
